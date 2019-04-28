@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Chrome Header Modifier</title>
+      <script src="ui.js"></script>
+   </head>
+   <body>
+      <div style="padding: 20px 20px 20px 20px;">
+         <h3>Chrome Header Modifier</h3>
+		 <!-- Enable checkbox. If this checkbox is checked, then only headers will be added/modified. -->
+         <input type="checkbox" id="enable" name="enable" value="enable" checked>Enable<br>
+
+		<!-- Input text area for JSON.  -->
+         <h4>Enter headers in JSON format</h4>         
+         <textarea id="header_input" rows="4" cols="50">
+			[{"name":"header-name-1","value":"header-value-1"},{"name":"header-name-2","value":"header-value-2"}]
+		</textarea>
+		
+		 <!-- Save button which will save value of enable checkbox & header JSON. -->
+         <button id="save" type="button">Save</button>
+      </div>
+   </body>
+</html>
